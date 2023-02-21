@@ -73,6 +73,7 @@ const Home: React.FC = () => {
       });
       navigate(`?${queryString}`);
     }
+    isMounted.current = true;
   }, [categoryId, sortType, searchValue]);
 
   return (
